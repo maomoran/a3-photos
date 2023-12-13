@@ -13,7 +13,7 @@
         color: white;
         background: radial-gradient(circle, coral, midnightblue, black);
         background-size: 400% 400%;
-        animation: gradientAnimation 30s ease infinite;
+        animation: gradientAnimation 10s ease infinite;
       }
 
       @keyframes gradientAnimation {
@@ -155,15 +155,28 @@
 
       .gallery {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: 10px;
-        padding-top: 70px;
+        padding: 70px;
       }
 
       .gallery img {
         width: 100%;
         height: auto;
         cursor: pointer;
+      }
+
+      table {
+        padding-left: 65px;
+        padding-right: 65px;
+        width: 100%;
+      }
+
+      th,
+      td {
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid white;
       }
     </style>
   </head>
@@ -173,37 +186,62 @@
         <li><a href="#" class="website-title">Mica Andrea Morante</a></li>
         <li><a href="photos.html">Photos</a></li>
         <li><a href="poems.html">Poems</a></li>
+        <li><a href="home.html">About</a></li>
       </ul>
     </nav>
     <h1>Photos</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Photo Row</th>
+          <th>Poem</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Fell for Fall</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Chasing the Moon That Chased Me</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Dreams of You</td>
+        </tr>
+      </tbody>
+    </table>
     <div class="gallery">
-      <a href="IMG_6927.jpg">
-        <img src="IMG_6927.jpg" alt="Gallery Item">
+      <a href="IMG_0455.jpg">
+        <img src="IMG_0455.jpg" alt="Fall Item 1">
       </a>
-      <a href="IMG_6859.jpg">
-        <img src="IMG_6859.jpg" alt="Gallery Item">
+      <a href="IMG_0842.jpg">
+        <img src="IMG_0842.jpg" alt="Fall Item 2">
       </a>
-      <a href="IMG_6929.jpg">
-        <img src="IMG_6929.jpg" alt="Gallery Item">
+      <a href="DE62D037-7C89-4979-95CE-F6C7EF0A9D86.jpg">
+        <img src="DE62D037-7C89-4979-95CE-F6C7EF0A9D86.jpg" alt="Night Item 1">
       </a>
-      <a href="IMG_6857.jpg">
-        <img src="IMG_6857.jpg" alt="Gallery Item">
+      <a href="1068CCF7-A646-4D35-A0AE-0A5F3B486DDC.jpg">
+        <img src="1068CCF7-A646-4D35-A0AE-0A5F3B486DDC.jpg" alt="Night Item 2">
       </a>
-      <a href="IMG_6857.jpg">
-        <img src="IMG_6857.jpg" alt="Gallery Item">
+      <a href="IMG_0062.jpg">
+        <img src="IMG_0062.jpg" alt="Dream Item 1">
       </a>
-      <a href="IMG_6857.jpg">
-        <img src="IMG_6857.jpg" alt="Gallery Item">
+      <a href="IMG_0068.jpg">
+        <img src="IMG_0068.jpg" alt="Dream Item 2">
       </a>
-      <a href="IMG_6857.jpg">
-        <img src="IMG_6857.jpg" alt="Gallery Item">
-      </a>
-      <a href="IMG_6857.jpg">
-        <img src="IMG_6857.jpg" alt="Gallery Item">
-      </a>
-      <a href="IMG_6857.jpg">
-        <img src="IMG_6857.jpg" alt="Gallery Item">
-      </a>
+    </div>
+    <div class="content-block">
+      <div class="heading-block">Contact</div>
+      <div class="text-block-center">
+        <p><a href="mailto:info@example.com?subject=Inquiry&body=Hello%20there,">maomoran@uwaterloo.ca</a></p>
+        <p><a href="tel:+1234567890">(555) 555-5555</a></p>
+        <p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">instagram</a></p>
+      </div>
+      <div class="image-block">
+        <img src="IMG_3464.JPG" alt="me holding a camera">
+      </div>
     </div>
 
     <footer>
